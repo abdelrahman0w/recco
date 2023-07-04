@@ -49,7 +49,7 @@ A simple screen recording tool written in bash. RECCO uses [FFmpeg](https://gith
     -n <NAME>         The name of the output file (Default: screen-record-%Y-%m-%d-%H-%M-%S)
     -f <FORMAT>       The format of the output file (Defualt: MP4)
     -r <FRAMES>       Frame rate (Default: 30)
-    -m <true|false>   Capture mic audio
-    -d<true|false>    Capture device audio
+    -m                Capture mic audio
+    -d                Capture device audio
     -c <CODEC>        Audio codec (Defualt: aac)
     ```
