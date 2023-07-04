@@ -1,0 +1,20 @@
+##Sets the audio sources to use.
+##Currently available ones are "mpd", "pulse", "shmem", and "alsa". Defaults to "pulse".
+audio.sources=pulse
+
+##vis tries to find the correct pulseaudio sink, however this will not work on all systems.
+##If pulse audio is not working with vis try switching the audio source. A list can be found by running the
+##command pacmd list-sinks  | grep -e 'name:'  -e 'index'
+audio.pulse.source=0
+
+##Margins in percent of total screen for spectrum visualizer. All margins default to 0
+visualizer.spectrum.top.margin=0.30
+visualizer.spectrum.bottom.margin=0.10
+visualizer.spectrum.right.margin=0.10
+visualizer.spectrum.left.margin=0.15
+
+##Specifies the color scheme. The color scheme must be in ~/.config/vis/colors/ directory. The default scheme is "colors".
+colors.scheme=basic_colors
+
+##Turns off overriding the user's terminal colors. This is true by default.
+colors.override.terminal=true
