@@ -22,8 +22,8 @@ function usage() {
     echo "  -n <NAME>         The name of the output file (Default: screen-record-%Y-%m-%d-%H-%M-%S)"
     echo "  -f <FORMAT>       The format of the output file (Defualt: MP4)"
     echo "  -r <FRAMES>       Frame rate (Default: 30)"
-    echo "  -m <true|false>   Capture mic audio"
-    echo "  -d <true|false>   Capture device audio"
+    echo "  -m                Capture mic audio"
+    echo "  -d                Capture device audio"
     echo "  -c <CODEC>        Audio codec (Defualt: aac)"
     exit 1
 }
