@@ -4,10 +4,7 @@
   - [Description](#description)
   - [Dependencies](#dependencies)
   - [Installation](#installation)
-    - [Method 1](#method-1-direct-installation)
-    - [Method 2](#method-2-clone-and-install-manually)
   - [Usage](#usage)
-  - [Features](#features)
 
 ## Description
 
