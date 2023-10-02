@@ -20,6 +20,7 @@ function check_tmux() {
         echo -e "${YELLOW}tmux could not be found!${RESET}"
         echo -e "will only run the recorder"
         read -n 1 -s -r -p "Press any key to continue..."
+        echo ""
     fi
 }
 
@@ -30,5 +31,6 @@ function check_vis() {
         echo -e "${YELLOW}vis could not be found!${RESET}"
         echo -e "there will be no audio visualization!"
         read -n 1 -s -r -p "Press any key to continue..."
+        echo ""
     fi
 }

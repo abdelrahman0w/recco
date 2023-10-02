@@ -57,3 +57,5 @@ if [ "$IS_TMUX" = true ]; then
 
     exit 0
 fi
+
+sh $DIR/config/recorder.sh $ARGS

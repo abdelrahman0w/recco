@@ -84,13 +84,13 @@ while getopts "n:f:r:c:md" opt; do
 done
 
 if [ "$record_microphone" = true ]; then
-    echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Microphone:${RESET} $(pactl list short sources | grep -i input | awk '{print $2;}')"
-    audio_input+="-f pulse -ac 2 -i $(pactl list short sources | grep -i input | awk '{print $2;}') "
+    echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Microphone:${RESET} $(pactl list short sources | grep -i input | awk '{print $2;}' | tail -n 1)"
+    audio_input+="-f pulse -ac 2 -i $(pactl list short sources | grep -i input | awk '{print $2;}' | tail -n 1) "
 fi
 
 if [ "$record_device_audio" = true ]; then
-    echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Audio Device:${RESET} $(pactl list short sources | grep -i output | awk '{print $2;}')"
-    audio_input+="-f pulse -ac 2 -i $(pactl list short sources | grep -i output | awk '{print $2;}') "
+    echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Audio Device:${RESET} $(pactl list short sources | grep -i output | awk '{print $2;}' | tail -n 1)"
+    audio_input+="-f pulse -ac 2 -i $(pactl list short sources | grep -i output | awk '{print $2;}' | tail -n 1) "
 fi
 
 start_recorder
