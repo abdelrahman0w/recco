@@ -42,7 +42,7 @@ function recorder_info() {
     echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Video Codec:${RESET} $video_codec${RESET}"
     echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Video Bitrate:${RESET} $video_bitrate${RESET}"
     echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Audio Bitrate:${RESET} $audio_bitrate${RESET}"
-    echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Audio Input:${RESET} $audio_input"
+    echo -e "${BLUE}[${RESET}TRACE${BLUE}]${YELLOW} Audio Input:${RESET} ${audio_input:3}"
     echo ""
     echo -e "${BLUE}[${RESET}INFO ${BLUE}]${GREEN} Starting Recording...${RESET}"
     echo -e "${BLUE}[${RESET}INFO ${BLUE}]${RESET} Press Ctrl+C When Done${RESET}"
