@@ -4,6 +4,11 @@ PROGRAM_NAME = recco
 all:
 	@echo -e "Run 'make install' to install the program"
 
+upgrade: sync uninstall install
+
+sync:
+	@git pull origin main
+
 install:
 	@echo -e "Installing recco to $(INSTALL_DIR)..."
 	@sudo mkdir -p $(INSTALL_DIR)/$(PROGRAM_NAME)-dir
